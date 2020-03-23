@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<behaviours>
+  <target id="labelAuthor">
+    <behaviour animated="1" delay="0" duration="1000" maxOpacity="1" minOpacity="0.3" repeatCount="-1" type="behaviour\custom\BlinkAnimationBehaviour" when="HOVER"/>
+    <behaviour threshold="0.20243902439024" type="behaviour\custom\BloomEffectBehaviour" when="HOVER"/>
+  </target>
+  <target id="buttonStart">
+    <behaviour enabled="" radius="3" type="behaviour\custom\GaussianBlurEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="buttonKillGame">
+    <behaviour animated="1" delay="0" duration="500" maxOpacity="1" minOpacity="0.3" repeatCount="-1" type="behaviour\custom\BlinkAnimationBehaviour" when="HOVER"/>
+  </target>
+  <target id="buttonSAMP">
+    <behaviour enabled="" radius="3" type="behaviour\custom\GaussianBlurEffectBehaviour" when="ALWAYS"/>
+  </target>
+</behaviours>

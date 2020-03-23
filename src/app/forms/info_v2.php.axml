@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="info_v2">
+    <method name="doLabelVerMouseEn">
+      <elementSetText object="labelVer" object-type="object" relative="" relative-type="" value="MetroUI Update!" value-type="string"/>
+    </method>
+  <method name="doLabelVerMouseE">
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="v.1.0a" value-type="string"/>
+    </method>
+  <method name="doLabelVerMouseExit">
+      <elementSetText object="labelVer" object-type="object" relative="" relative-type="" value="v.1.0a" value-type="string"/>
+    </method>
+  <method name="doLabelVerMouseEnter">
+      <elementSetText object="labelVer" object-type="object" relative="" relative-type="" value="MetroUI Update!" value-type="string"/>
+    </method>
+  <method name="doButtonLogClickLeft">
+      <loadForm form="log" form-type="form" savePosition="" savePosition-type="" saveSize="" saveSize-type=""/>
+    </method>
+  <method name="doButtonCloseClickLeft">
+      <hideForm form="info_v2" form-type="form"/>
+    </method>
+  
+  </class>
+</root>

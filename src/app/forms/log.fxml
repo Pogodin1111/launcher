@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="336" prefWidth="432" styleClass="">
+  <children>
+    <Panel backgroundColor="#f07c16" borderColor="#ffffff" borderRadius="5" borderStyle="DASHED" borderWidth="2" focusTraversable="false" id="panelLog" layoutX="8" layoutY="8" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="320" prefWidth="416" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <TextArea editable="false" focusTraversable="true" id="textAreaLog" layoutX="8" layoutY="8" prefColumnCount="40" prefHeight="264" prefWidth="400" promptText="" styleClass="text-input text-area " text="[1.0a] &lt;- (Текущая версия)&#10;- Исправлен баг с текстом версии&#10;- Исправлена иконка в форме info&#10;- Добавлена форма log&#10;- Форма info теперь со стилем – Утилита&#10;- Форма log теперь со стилем – Утилита&#10;- Обновлена IDE&#10;[End]&#10;&#10;[1.0] | MetroUI Update |&#10;- Добавлен MetroUI дизайн&#10;- Небольшие фиксы&#10;- Обновлена IDE&#10;[End]&#10;&#10;[0.6]&#10;- Добавлены индикаторы наличия exe файлов&#10;- Небольшие фиксы&#10;[End]&#10;&#10;[0.4b]&#10;- Добавлена возможность запустить gta_sa.exe&#10;- Добавлена возможность запустить samp.exe&#10;- Добавлена возможность “убить” процесс&#10;- Добавлена info форма&#10;[End]&#10;" wrapText="true">
+          <font>
+            <Font name="Segoe UI" size="12"/>
+          </font>
+        </TextArea>
+        <FlatButton alignment="CENTER" borderRadius="3" clickColor="#b3b3b3" color="#ffffff" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" hoverColor="#e6e6e6" id="buttonClose" layoutX="136" layoutY="280" prefHeight="32" prefWidth="144" styleClass="x-flat-button " text="Закрыть" textAlignment="CENTER" textFill="#f07c16" underline="false" wrapText="false">
+          <font>
+            <Font name="Segoe UI Bold" size="12"/>
+          </font>
+        </FlatButton>
+        <Data cursor="TEXT" enabled="1" id="data-textAreaLog" visible="1"/>
+        <Data cursor="HAND" enabled="1" graphic=".data/img/16_close.png" id="data-buttonClose" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panelLog" visible="1"/>
+  </children>
+</AnchorPane>

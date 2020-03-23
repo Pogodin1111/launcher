@@ -1,0 +1,7 @@
+org.develnext.jphp.core.ext.CompilerExtension
+org.develnext.jphp.json.JsonExtension
+org.develnext.jphp.ext.xml.XmlExtension
+org.develnext.jphp.ext.javafx.JavaFXExtension
+org.develnext.jphp.ext.gui.desktop.GuiDesktopExtension
+org.develnext.jphp.ext.game.GameExtension
+org.develnext.jphp.zend.ext.ZendExtension

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="MainForm">
+    
+  
+  <method name="doLabelAuthorMouseEnter">
+      <elementSetText object="labelAuthor" object-type="object" relative="" relative-type="" value="vk.com/darkpro1337" value-type="string"/>
+    </method>
+  <method name="doLabelAuthorMouseExit">
+      <elementSetText object="labelAuthor" object-type="object" relative="" relative-type="" value="by DarkPro1337" value-type="string"/>
+    </method>
+  <method name="doLabelAuthorClickLeft">
+      <browse url="https://vk.com/darkpro1337" url-type="string"/>
+    </method>
+  
+  
+  <method name="doImageLauncherClick2x">
+      <showForm form="info" form-type="form"/>
+    </method>
+  
+  <method name="doButtonInfoClickLeft">
+      <showForm form="info" form-type="form"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButtonStartClickLeft">
+      <open file="gta_sa.exe" file-type="string"/>
+    </method>
+  <method name="doButtonSAMPClickLeft">
+      <open file="samp.exe" file-type="string"/>
+    </method>
+  
+  
+  <method name="doButtonLinkClickLeft">
+      <browse url="http://darkproq.tumblr.com/post/141893929597/gtasalauncher" url-type="string"/>
+    </method>
+  <method name="doButtonSourceClickLeft">
+      <browse url="http://develnext.org/project/PRcpmWFWKl" url-type="string"/>
+    </method>
+  
+  <method name="doShowing">
+      <ifFileExists file="gta_sa.exe" file-type="string" not="" not-type=""/>
+      <openBlock/>
+      <elementEnabledOn object="buttonStart" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="buttonStart" object-type="object"/>
+      <closeBlock/>
+      <ifFileExists file="samp.exe" file-type="string" not="" not-type=""/>
+      <openBlock/>
+      <elementEnabledOn object="buttonSAMP" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="buttonSAMP" object-type="object"/>
+      <closeBlock/>
+      <ifFileExists file="gta_sa.exe" file-type="string" not="1" not-type=""/>
+      <openBlock/>
+      <message kind="ERROR" kind-type="string" value="Не найден файл gta_sa.exe! Поместите лаунчер в папку с игрой!" value-type="string" wait="1" wait-type=""/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="buttonStart" object-type="object"/>
+      <closeBlock/>
+      <ifFileExists file="samp.exe" file-type="string" not="1" not-type=""/>
+      <openBlock/>
+      <message kind="ERROR" kind-type="string" value="Не найден файл samp.exe! Поместите лаунчер в папку с игрой!" value-type="string" wait="1" wait-type=""/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="buttonSAMP" object-type="object"/>
+      <closeBlock/>
+      <ifFileExists file="gta_sa.exe" file-type="string" not="" not-type=""/>
+      <elementShow object="GtaYes" object-type="object"/>
+      <ifFileExists file="gta_sa.exe" file-type="string" not="1" not-type=""/>
+      <elementShow object="GtaNo" object-type="object"/>
+      <ifFileExists file="samp.exe" file-type="string" not="" not-type=""/>
+      <elementShow object="SampYes" object-type="object"/>
+      <ifFileExists file="samp.exe" file-type="string" not="1" not-type=""/>
+      <elementShow object="SampNo" object-type="object"/>
+    </method>
+  <method name="doButtonInfoOpenClickLeft">
+      <showForm form="info_v2" form-type="form"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doGtaYesClickLeft">
+      <toast value="Файл gta_sa.exe найден!" value-type="string"/>
+    </method>
+  <method name="doGtaNoClickLeft">
+      <toast value="Файл gta_sa.exe НЕ найден!" value-type="string"/>
+    </method>
+  <method name="doSampNoClickLeft">
+      <toast value="Файл samp.exe НЕ найден!" value-type="string"/>
+    </method>
+  <method name="doSampYesClickLeft">
+      <toast value="Файл samp.exe найден!" value-type="string"/>
+    </method>
+  </class>
+</root>
